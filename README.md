@@ -1,3 +1,5 @@
-This is the demo repository for [squido](https://github.com/mrvautin/squido) static website generator: https://github.com/mrvautin/squido
+This is a theme repository for [squido](https://github.com/mrvautin/squido) static website generator: https://github.com/mrvautin/squido
 
-To see an demo based off this repo, visit the `squido` blog [here](https://blog.squido.org)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/mrvautin/squido-theme-faq/main/source/content/images/screenshot.png">
+</p>
