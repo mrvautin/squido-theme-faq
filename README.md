@@ -1,4 +1,4 @@
-This is a theme repository for [squido](https://github.com/mrvautin/squido) static website generator: https://github.com/mrvautin/squido
+This is a theme repository for [squido](https://squido.org) static website generator: https://github.com/mrvautin/squido
 
 ## Screenshot
 

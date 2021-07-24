@@ -1,7 +1,7 @@
 const config = {
     development: {
         name: 'squido FAQ',
-        description: 'FAQ theme for squido',
+        description: 'An FAQ theme for squido',
         twitterHandle: '@mrvautin',
         baseUrl: 'http://localhost:4965',
         sourcesExt: 'markdown',
@@ -24,7 +24,7 @@ const config = {
     },
     production: {
         name: 'squido FAQ',
-        description: 'FAQ theme for squido',
+        description: 'An FAQ theme for squido',
         twitterHandle: '@mrvautin',
         baseUrl: 'https://faq.squido.org',
         sourcesExt: 'markdown',

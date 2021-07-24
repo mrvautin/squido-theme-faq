@@ -11,7 +11,7 @@ body{
 
 .site-wrapper, .nav{
     margin: 0px !important;
-    padding: 0px !important;
+    padding-top: 5px !important;
     background-color: #4E55D2 !important;
 }
 
@@ -145,10 +145,6 @@ main > .container {
     z-index: 2;
 }
 
-.nav-name-link, .nav-name-link:hover {
-    color: #264653 !important;
-}
-
 .nav {
     list-style: none;
     width: 100%;
@@ -198,7 +194,7 @@ main > .container {
     z-index: 1;
     position: relative;
     margin: 0 auto;
-    padding: 80px 0 40px 0;
+    padding: 40px 0 40px 0;
 }
 
 .hero-search {
