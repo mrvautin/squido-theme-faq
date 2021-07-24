@@ -44,30 +44,53 @@
     <link rel="alternate" type="application/rss+xml" href="{{config.baseUrl}}/rss" />
     <link rel="alternate" type="application/atom+xml" href="{{config.baseUrl}}/atom" />
     <link rel="alternate" type="application/json" href="{{config.baseUrl}}/json" />
+	<link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/css/bootstrap.min.css" integrity="sha512-aqT9YD5gLuLBr6ipQAS+72o5yHKzgZbGxEh6iY8lW/r6gG14e2kBTAJb8XrxzZrMOgSmDqtLaF76T0Z6YY2IHg==" crossorigin="anonymous" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FlexSearch/0.6.22/flexsearch.min.js" integrity="sha512-KxRyF5OGyocY7+bOecICRkukb/F8P8yFO/86j3TZ8zxzL5nieFBJFFk0sd5aj387UfSOcSan4FJ86+ydH50nsw==" crossorigin="anonymous"></script>
+    <script src="/content/javascripts/searchdata.js"></script>
     <link rel="stylesheet" href="/content/stylesheets/style{{config.fileEnv}}.css">
     <script src="/content/javascripts/site{{config.fileEnv}}.js"></script>
-    <meta name="google-site-verification" content="VRUmulyJTSQAk3Lm2xSNlu4kDy9L7jCi6qNZoBh1tMw" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7038832-49"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-7038832-49');
-    </script>
   </head>
   <body>
-    <header class="d-flex flex-column flex-md-row align-items-center p-2 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <div class="me-md-auto">
-          <a href="/">
-            <h1 class="brand"><img src="/content/images/squido.svg" alt="" width="70" height="70" class="d-inline-block align-text-top">squido</h1>
-          </a>
-        </div>
-        <nav class="my-2 my-md-0 me-md-3">
-            <a class="p-2 text-dark" href="/">Home</a>
-            <a class="p-2 text-dark" href="/about">About</a>
-        </nav>
-    </header>
+	<div class="site-wrapper">
+		<div class="container">
+			<ul class="nav justify-content-center mt-2 mb-2">
+				<li class="nav-item">
+					<img src="/content/images/squido.svg" alt="squido logo" width="40" height="40" class="d-inline-block">
+					<span class="fs-4"><a class="nav-name-link" href="/">{{config.name}}</a></span>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/tag/setup"><i class="lni lni-files"></i> Setup</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/tag/customizing"><i class="lni lni-pencil"></i> Customizing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/tag/extending"><i class="lni lni-plug"></i> Extending</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/tag/hosting"><i class="lni lni-database"></i> Hosting</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="site-title no-image">
+		<div class="container">
+			<div class="hero-content">
+				<h1 class="site-name">{{config.name}}</h1>
+				<h2 class="site-description">{{config.description}}</h2>
+			</div>
+			<div class="hero-search">
+				<div class="search">
+					<form class="search-form" onsubmit="return false">
+						<i class="search-icon fas fa-search"></i>
+						<input type="text" id="search-input" placeholder="Type your keywords...">
+					</form>
+					<ul id="search-results" class="list-group" style="z-index: 999; position: absolute; width: 100%;"></ul>
+				</div>
+			</div>
+		</div>
+	</section>
     <main class="container">
       {{{body}}}
     </main>

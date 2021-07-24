@@ -1,37 +1,23 @@
 <div class="row">
-  {{#each posts}}
-  <div class="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex align-items-stretch">
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <div class="card-text">
-          <h2>
-            <a href="/{{this.permalink}}">{{this.title}}</a> 
-          </h2>
-          {{this.summary}}
-        </div>
-        <div class="d-flex justify-content-between align-items-center">
-          <a class="btn btn-outline-secondary" href="/{{this.permalink}}">Read more..</a>
+  <div class="col-xs-12 col-lg-10 offset-lg-1">
+    <div class="row">
+      {{#each tags}}
+      <div class="col-xs-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
+        <div class="card shadow-sm p-4">
+          <div class="card-body">
+            <div class="card-text">
+              <h2>{{capitalize @key}}</h2>
+                {{#each this}}
+                  <p><i class="lni lni-chevron-right"></i> <a class="article-link" href="/{{this.permalink}}">{{this.title}}</a></p>
+                {{/each}}
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <a class="article-readmore" href="/tag/{{@key}}/">See all articles...</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  {{/each}}
-</div>
-{{!-- Pagination --}}
-{{#if config.pagination}}
-{{#if shouldPaginate}}
-<div class="row">
-  <div class="col-xs-12 col-sm-12 mb-4 text-center">
-    <p class="text-muted">Page {{page}} of {{pages}}</p>
-    <div class="btn-group" role="group">
-    {{#if prevPage }}
-        <a href="/page/{{prevPage}}" class="btn btn-outline-secondary">&laquo; Prev Page</a>
-    {{/if}}
-    {{#if nextPage }}
-        <a href="/page/{{nextPage}}" class="btn btn-outline-secondary">Next Page &raquo;</a>
-    {{/if}}
+      {{/each}}
     </div>
   </div>
 </div>
-{{/if}}
-{{/if}}

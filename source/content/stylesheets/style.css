@@ -4,18 +4,29 @@ html {
 }
 
 body{
+    background-color: #fafafa;
     color: #454545 !important;
     margin-bottom: 80px;
 }
 
+.site-wrapper, .nav{
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: #4E55D2 !important;
+}
+
 a{
-    color: #F95A77 !important;
+    color: #3942DC !important;
     text-decoration: none !important;
 }
 
 a:hover{
-    color: #FF96A9 !important;
+    color: #4E55D2 !important;
     text-decoration: underline !important;
+}
+
+.nav a{
+    color: #fff !important;
 }
 
 .btn-secondary {
@@ -24,14 +35,14 @@ a:hover{
 
 .btn-outline-secondary {
     color: #ffffff !important;
-    background-color: #F95A77 !important;
-    border-color: #F95A77 !important;
+    background-color: #3942DC !important;
+    border-color: #3942DC !important;
 }
 
 .btn-outline-secondary:hover {
     color: #ffffff !important;
-    background-color: #FF96A9 !important;
-    border-color: #FF96A9 !important;
+    background-color: #4E55D2 !important;
+    border-color: #4E55D2 !important;
 }
 
 .jumbo-title {
@@ -66,8 +77,172 @@ main > .container {
     padding: 60px 15px 0;
 }
 
+.text-squido-highlight {
+    color: #ffffff !important;
+    background-color: #4E55D2 !important;
+}
+
+.result-title{
+    color: #264653 !important;
+    font-weight: 700 !important;
+}
+
+.search-result-item:hover{
+    background-color: #f8f9fa !important;
+}
+
+.article-link{
+    color: #264653 !important;
+}
+
+.article-readmore{
+    font-weight: 700 !important;
+}
+
+.card{
+    min-width: 100%;
+}
+
 .related-card-title{
     min-height: 100px;
+}
+
+.list-group:first-child{
+    border-top-right-radius: 5px !important;
+    border-top-left-radius: 5px !important;
+}
+
+.list-group:last-child{
+    border-bottom-right-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-item{
+    border-bottom: 0px !important;
+}
+
+.list-group-item h5{
+    color: #264653 !important;
+}
+
+.list-group-item p{
+    color: #7a7a7a !important;
+}
+
+.list-group {
+    background-color: #fff;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
+.site-header {
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav-name-link, .nav-name-link:hover {
+    color: #264653 !important;
+}
+
+.nav {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.site-name {
+    color: #fff !important;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 700;
+    -webkit-animation-delay: 250ms;
+    animation-delay: 250ms;
+}
+
+.site-description {
+    color: #fff !important;
+    margin: 10px auto 0 auto;
+    max-width: 768px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+    -webkit-animation-delay: 350ms;
+    animation-delay: 350ms;
+}
+
+.site-title.no-image {
+    background-color: #4E55D2;
+}
+
+.site-title {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff !important;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    padding: 80px 0 40px 0;
+}
+
+.hero-search {
+    z-index: 1;
+    position: relative;
+    margin-top: -20px;
+    top: 40px;
+    margin-bottom: 60px;
+}
+
+.hero-search .search {
+    flex: 1 0 auto;
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero-search .search-form {
+    position: relative;
+}
+
+.hero-search .search-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #aaa;
+    transition: color .3s ease;
+}
+
+.hero-search #search-input {
+    font-size: 21px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    padding: 20px 20px 20px 60px;
+    color: #333;
+    border: none;
+    outline: 0;
+    flex: 0 0 100%;
+    background: #fff;
+    box-shadow: 0 3px 5px 0 #dfe5ee;
+    border-radius: 6px;
 }
 
 .footer {
