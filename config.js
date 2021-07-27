@@ -36,6 +36,10 @@ const config = {
             {
                 name: 'search',
                 options: {}
+            },
+            {
+                name: 'robots',
+                options: {}
             }
         ]
     }
