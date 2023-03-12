@@ -26,7 +26,7 @@ const config = {
         name: 'squido FAQ',
         description: 'An FAQ theme for squido',
         twitterHandle: '@mrvautin',
-        baseUrl: 'https://faq.squido.org',
+        baseUrl: 'https://squido-faq.markmoffat.com',
         sourcesExt: 'markdown',
         summaryLength: 250,
         port: 4965,
